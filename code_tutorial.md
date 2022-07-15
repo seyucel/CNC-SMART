@@ -52,7 +52,7 @@ for i = 1:nfiles
 	imgback = (ims{i});
 	noise_std(i) = std(double(imgback(idbwi)));
 	contrast(i) = mean(double(imgback(idbwi)))-mean(double(imgback(idcnc)));
-	...
-	
 end
 ```
+## To check the segmentation & image quality assessment
+if ...
