@@ -91,7 +91,7 @@ else
         T = adaptthresh(img1,0.5,'ForegroundPolarity','bright','NeighborhoodSize',[nb_size nb_size]);
         
         bwi = imbinarize(img1,T);
-        bwi = ~bwi;
+        %bwi = ~bwi;
         bwi1 = imclearborder(bwi);
         bwb = bwi-bwi1;      
         bwi = bwareaopen(bwi1,floor((1/pixel_length)^2)*150);%50/pixel_length
